@@ -1,0 +1,6 @@
+class CollectorError(Exception): """Base exception for collection failures."""
+class CollectorConfigurationError(CollectorError): """Collector is improperly configured."""
+class CollectorRequestError(CollectorError): """Collection request is invalid."""
+class CollectorNetworkError(CollectorError): """Network operation failed."""
+class CollectorPolicyError(CollectorError): """Request violates collector security or policy requirements."""
+class CollectorParseError(CollectorError): """Returned content could not be parsed."""
